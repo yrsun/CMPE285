@@ -16,7 +16,6 @@ def process(symbol):
     regularMP = stock.info['regularMarketPrice']
     marketPC = stock.info['regularMarketPrice'] - stock.info['previousClose']
     marketPCP = marketPC / stock.info['previousClose'] * 100
-    rslt += "Output:"
     current = dt.datetime.now()
     rslt += current.strftime("%a %b %d %H:%M:%S PDT %Y")
     rslt += f"<br>{shortN} ({symbol})<br>"
@@ -31,7 +30,6 @@ def index():
 def my_form_post():
     text1 = request.form['text1']
     word = request.args.get('text1')
-    text2 = request.form['text2']
     combine = process(text1)
     result = {
         "output": combine
