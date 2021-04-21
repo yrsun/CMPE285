@@ -13,11 +13,11 @@
                       type: "POST",
                       data: {text1:text1}
                   }).done(function(response) {
-                    var html= "<br><br><br><p>Output :<p>";
+                    var html= "<br><p><i>Output :</i>";
                     response =response.result;
                          $.each(response,function(key,val){
                          console.log(val);
-                            html+="<p>"+val+"<p>"
+                            html+=""+val+"<p>"
                         });
                         html +="<br>";
                         $(".show-data").append(html);
@@ -26,8 +26,8 @@
     </script>
     <body>
         <p>
-            Input:<br>
-                Please enter a symbol:<br><input type="text" id="text1" name="text1"><
+            <i>Input:</i><br>
+                Please enter a symbol:<br><input type="text" id="text1" name="text1">
                 <button id="clicked" onclick="myFunction()">Submit</button>
             </p>
         <div class="show-data" >
