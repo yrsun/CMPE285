@@ -11,7 +11,7 @@
             $.ajax({
                 url: "/join",
                 type: "POST",
-                data: {text1:text1}
+                data: {symbol:symbol}
             }).done(function(response) {
                 var html= "<br><br><br><p> <b> RESULT : <b><p>";
                 response =response.result;
