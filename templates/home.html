@@ -13,7 +13,7 @@
                       type: "POST",
                       data: {text1:text1}
                   }).done(function(response) {
-                    var html= "<br><p><i>Output:</i>";
+                    var html= "<p><i>Output:</i><br>";
                     response =response.result;
                          $.each(response,function(key,val){
                          console.log(val);
