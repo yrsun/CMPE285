@@ -23,8 +23,12 @@ jedi==0.18.0
 Jinja2==2.11.3
 jupyter-client==6.1.11
 jupyter-core==4.7.1
+lxml==4.6.3
 MarkupSafe==1.1.1
 MechanicalSoup==0.8.0
+multitasking==0.0.9
+numpy==1.20.2
+pandas==1.2.4
 parso==0.8.1
 pbr==5.5.1
 pexpect==4.8.0
@@ -37,6 +41,7 @@ Pygments==2.8.0
 pyparsing==2.4.7
 pyperclip==1.8.2
 python-dateutil==2.8.1
+pytz==2021.1
 PyYAML==5.4.1
 pyzmq==22.0.3
 requests==2.25.1
@@ -49,3 +54,4 @@ virtualenv==20.0.31
 virtualenv-clone==0.5.4
 wcwidth==0.2.5
 Werkzeug==1.0.1
+yfinance==0.1.59
