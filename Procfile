@@ -1,1 +1,1 @@
-web: gunicorn schedular
+web: gunicorn scheduler
