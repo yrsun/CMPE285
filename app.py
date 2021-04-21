@@ -29,6 +29,7 @@ def index():
 @app.route("/join", methods=['GET', 'POST'])
 def my_form_post():
     symbol = request.form['symbol']
+    print(symbol)
     rslt = process(symbol)
     result = {"output": "ADBE"}
     result = {str(key): value for key, value in result.items()}
