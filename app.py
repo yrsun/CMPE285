@@ -37,7 +37,7 @@ def my_form_post():
     text1 = request.form['text1']
     word = request.args.get('text1')
     text2 = request.form['text2']
-    combine = do_something(text1,text2)
+    combine = process(text1)
     result = {
         "output": combine
     }
