@@ -9,6 +9,7 @@ click==7.1.2
 cliff==2.8.3
 cmd2==1.5.0
 colorama==0.4.4
+DateTime==4.3
 decorator==4.4.2
 distlib==0.3.1
 filelock==3.0.12
@@ -55,3 +56,4 @@ virtualenv-clone==0.5.4
 wcwidth==0.2.5
 Werkzeug==1.0.1
 yfinance==0.1.59
+zope.interface==5.4.0
