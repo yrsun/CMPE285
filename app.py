@@ -30,7 +30,7 @@ def index():
 def my_form_post():
     symbol = request.form['symbol']
     rslt = process(symbol)
-    result = {"output": rslt}
+    result = {"output": "ADBE"}
     result = {str(key): value for key, value in result.items()}
     return jsonify(result=result)
 
