@@ -26,7 +26,7 @@ def process(symbol):
 def index():
     return render_template('home.html')
 
-@app.route("/join", method=['GET', 'POST'])
+@app.route("/join", methods=['GET', 'POST'])
 def my_form_post():
     symbol = request.form['symbol']
     rslt = process(symbol)
