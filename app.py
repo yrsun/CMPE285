@@ -19,14 +19,9 @@ def process(symbol):
     rslt += "Output:"
     current = dt.datetime.now()
     rslt += current.strftime("%a %b %d %H:%M:%S PDT %Y")
+    rslt += f"<br>{shortN} ({symbol})<br>"
     rslt += f"{regularMP} {marketPC:.02f} ({marketPCP:.02f}%)"
     return rslt
-
-def do_something(text1,text2):
-   text1 = text1.upper()
-   text2 = text2.upper()
-   combine = text1 + text2
-   return combine
 
 @app.route("/")
 def index():
